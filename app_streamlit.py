@@ -11,8 +11,9 @@ import os
 
 # 從環境變數 API_ENDPOINT 讀，若沒設就回落到本機開發時的 localhost
 API_URL = os.getenv("API_ENDPOINT", "http://localhost:5000/process-image")
-# 5/18新增
+# 5/18新增01
 
+st.write(f"Calling API at: {API_URL}")  # 5/18新增02
 
 st.title("圖像處理 API Demo")
 
